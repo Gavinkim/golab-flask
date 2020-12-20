@@ -1,6 +1,8 @@
 ## flask rest api tutorial
 
-* > Book 깔끔한 파이썬 탄탄한 백엔드  
+### reference
+* [Book](http://www.yes24.com/Product/Goods/68713424)
+* [book resource](https://github.com/aisolab/flask101/blob/master/README.md)
 ### run
 <pre>
 docker-compose up -d 
