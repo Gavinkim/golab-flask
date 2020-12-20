@@ -17,7 +17,7 @@ class Services:
 ################################
 def create_app(test_config=None):
     app = Flask(__name__)
-
+    app.config['JSON_AS_ASCII'] = False
     CORS(app)
 
     if test_config is None:

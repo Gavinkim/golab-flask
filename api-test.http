@@ -22,11 +22,11 @@ Content-Type: application/json
 ### tweet
 POST http://localhost:5000/tweet
 Content-Type: application/json
-Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MDg1NTA2NDl9.DNy2Pfc3L-RWg-KGO4qDvCTQieXWfNMtTSsxlZPUBjA
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MDg1NTI0OTd9.KLMourkILP18bX6XvFuO7nMpf_U0VX1fFe50ziUtQNs
 
 {
   "id": 1,
-  "tweet": "hello world "
+  "tweet": "한글 입니다. "
 }
 
 ### follow
@@ -56,4 +56,4 @@ Accept: application/json
 ###
 GET http://localhost:5000/timeline
 Accept: application/json
-Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MDg1NTA2NDl9.DNy2Pfc3L-RWg-KGO4qDvCTQieXWfNMtTSsxlZPUBjA
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MDg1NTI0OTd9.KLMourkILP18bX6XvFuO7nMpf_U0VX1fFe50ziUtQNs
