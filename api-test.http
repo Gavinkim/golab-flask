@@ -1,0 +1,59 @@
+### register
+POST http://localhost:5000/sign-up
+Content-Type: application/json
+
+{
+	"email":"test4@test.com",
+	"name":"gavin",
+	"password":"test",
+	"profile":"developer.bookkkkkkk",
+    "profile_picture": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+}
+
+### login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+	"email":"test@test.com",
+	"password":"test"
+}
+
+### tweet
+POST http://localhost:5000/tweet
+Content-Type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MDg1NTA2NDl9.DNy2Pfc3L-RWg-KGO4qDvCTQieXWfNMtTSsxlZPUBjA
+
+{
+  "id": 1,
+  "tweet": "hello world "
+}
+
+### follow
+POST http://localhost:5000/follow
+Content-Type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MDg1NTA2NDl9.DNy2Pfc3L-RWg-KGO4qDvCTQieXWfNMtTSsxlZPUBjA
+
+{
+  "follow": 1,
+  "id": 7
+}
+
+### unfollow
+POST http://localhost:5000/unfollow
+Content-Type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2MDg1NTAzMjZ9.RkK3zcGwBdUC4-XfOL0qILOmojenTM7uveoDInDJjd0
+
+{
+  "unfollow": 1,
+  "id": 7
+}
+
+### timeline
+GET http://localhost:5000/timeline/7
+Accept: application/json
+
+###
+GET http://localhost:5000/timeline
+Accept: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MDg1NTA2NDl9.DNy2Pfc3L-RWg-KGO4qDvCTQieXWfNMtTSsxlZPUBjA
